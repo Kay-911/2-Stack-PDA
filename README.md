@@ -40,7 +40,7 @@ The "2PDA" and "Translator" projects are designed to work seamlessly together. A
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Ysmnydgd/2PDA.git
+   git clone https://github.com/Ysmnydgd/2-Stack-PDA.git
 
 2. 
 
