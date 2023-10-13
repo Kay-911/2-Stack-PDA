@@ -33,7 +33,7 @@ The "2PDA" and "Translator" projects are designed to work seamlessly together. A
 
 ### Prerequisites
 
-- Java SE Development Kit (JDK) 8 or higher
+- Java SE Development Kit (JDK) 11
 
 ### Installation
 
@@ -118,3 +118,4 @@ This project has some limitations that you should be aware of before usage:
 ## Examples
 
 You'll find several pre-configured examples in the Examples folder above.
+Please note that you'll need to change their directory to 'src' to use them.
