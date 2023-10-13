@@ -1,0 +1,14 @@
+inputAlphabet=0,1,2,3
+states=0,1,2,3,4
+startState=0
+endStates=4
+transition=0,0,ε,ε,0,ε,0
+transition=0,1,ε,ε,1,ε,1
+transition=1,1,ε,ε,1,ε,1
+transition=1,2,1,ε,ε,ε,2
+transition=2,2,1,ε,ε,ε,2
+transition=2,3,0,ε,ε,ε,3
+transition=3,3,0,ε,ε,ε,3
+transition=3,ε,#,ε,#,ε,4
+transition=0,3,0,ε,ε,ε,3
+transition=0,ε,#,ε,#,ε,4
