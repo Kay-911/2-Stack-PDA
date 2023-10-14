@@ -91,7 +91,7 @@ You can also save all entered configurations if you wish to a .txt file. Now the
 
 You can enter input strings for simulation, view the current configuration by typing `show`, or return to the main menu using `menu`.
 
-**Note**: The Simulator also functions as 1-Stack-PDAs by always passing **ε** as pop_stack2 and push_stack2 charcter.
+**Note**: The Simulator also functions as 1-Stack-PDAs by always passing **ε** as pop_stack2 and push_stack2 character.
 
 ### Loading a 2-Stack-PDA
 
@@ -118,4 +118,4 @@ This project has some limitations that you should be aware of before usage:
 ## Examples
 
 You'll find several pre-configured examples in the Examples folder above.
-Please note that you'll need to change their directory to 'src' to use them.
+Please note that you'll need to change their directory to use them.
