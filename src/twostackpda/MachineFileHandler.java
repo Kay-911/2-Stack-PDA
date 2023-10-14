@@ -24,7 +24,7 @@ public class MachineFileHandler {
    *
    * @param file The file to load the configuration from.
    * @return A MachineConfigurator object object representing the loaded configuration, or
-   * null if an error occurs.
+   *         null if an error occurs.
    */
   public static MachineConfigurator loadMachineFromFile(File file) {
     List<String> inputAlphabet = null;
@@ -117,6 +117,7 @@ public class MachineFileHandler {
 
   /**
    * Add a ".txt" file extension to a given fileName if it doesn't already have one.
+   *
    * @param fileName The name of the file.
    * @return The fileName with ".txt" extension.
    */

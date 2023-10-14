@@ -142,6 +142,7 @@ public class MachineConfigurator {
 
   /**
    * Configure the starting state based on user input.
+   *
    * @param scanner The scanner to read user input.
    * @param states  The list of states that the PDA can have.
    * @return The starting state.
@@ -172,6 +173,7 @@ public class MachineConfigurator {
 
   /**
    * Configure the list of end states based on user input.
+   *
    * @param scanner The scanner to read user input.
    * @param states  The list of states that the PDA can have.
    * @return A list containing the integer values of the end states.
@@ -278,8 +280,8 @@ public class MachineConfigurator {
       } else {
         String[] transition = transitionStr.trim().split(",");
         transitions.add(transition);
-        }
       }
+    }
     return transitions;
   }
 
