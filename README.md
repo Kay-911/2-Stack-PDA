@@ -12,7 +12,7 @@ This is a Java-based simulator for 2-Stack Pushdown Automatons (2-Stack-PDA) wit
 
 ## Introduction
 
-A 2-Stack-PDA is a theoretical computing device used in formal languages and automata theory. It extends the capabilities of a traditional pushdown automaton (PDA) by having two stacks, allowing for more complex language recognition and even being able to simulate Turingmachines.
+A 2-Stack-PDA is a theoretical computing device used in formal languages and automata theory. It extends the capabilities of a traditional pushdown automaton (PDA) by having two stacks, allowing for more complex language recognition and even being able to simulate Turing machines.
 
 This package includes a set of classes to simulate 2-Stack-PDA behavior, allowing configuration of its input alphabet, states, start state, end states, and transitions. Additionally, it provides a simulator class to run simulations on input strings and determine their acceptance or rejection based on the 2-Stack-PDA's configurations.
 
@@ -20,7 +20,7 @@ This package includes a set of classes to simulate 2-Stack-PDA behavior, allowin
 
 ### Using 2-Stack-PDA and Translator Together
 
-The "2PDA" and "Translator" projects are designed to work seamlessly together. After translating a Turingmachine using the [Translator Project](https://github.com/Ysmnydgd/Translator), you can load the output .txt file into this 2-Stack-PDA Simulator.
+The "2PDA" and "Translator" projects are designed to work seamlessly together. After translating a Turing machine using the [Translator Project](https://github.com/Ysmnydgd/Translator), you can load the output .txt file into this 2-Stack-PDA Simulator.
 
 ## Features
 
