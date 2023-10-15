@@ -34,17 +34,34 @@ The "2PDA" and "Translator" projects are designed to work seamlessly together. A
 ### Prerequisites
 
 - Java SE Development Kit (JDK) 11
+- Git
 
 ### Installation
+> [!IMPORTANT]  
+> This application can only be run on Linux or Windows Subsystem for Linux (WSL) due to encoding issues with the symbol **ε** in other shells.
 
-1. Install a Java SDK which is Java 11 compatible (later versions should also be fine).
-2. Make sure that the commands java and javac call the respective Java 11 binaries.
-3. Install Git.
-4. Checkout 2-Stack-PDA from git repository ```https://github.com/Ysmnydgd/2-Stack-PDA.git```
-5. After that change into the directory 2-Stack-PDA ```cd 2-Stack-PDA/```
-6. To compile the source file execute the command ```javac -sourcepath ./src/ -d ./out/ .\src\twostackpda\MainMenu.java```
-7. To create a jar file execute the command ```jar cvf 2-Stack-PDA.jar -C .\out\ .```
-8. To execute the application run ```java -cp .\2-stack-pda.jar twostackpda/MainMenu```
+1. Install a Java SDK: Make sure you have a Java 11-compatible SDK installed. Newer versions should be compatible as well. Confirm that the ```java``` and ```javac``` commands reference the Java 11 binaries.
+2. Install Git: If Git is not already installed on your system, you can download and install it from [https://git-scm.com/](https://git-scm.com/).
+3. Clone the Repository: Use Git to clone the 2-Stack-PDA repository from
+   ```
+   https://github.com/Ysmnydgd/2-Stack-PDA.git
+   ```
+4. Change Directory: Navigate into the Translator directory using the following command
+   ```
+   cd 2-Stack-PDA/
+   ```
+5. Compile the Source Code: To compile the source code, execute the command
+   ```
+   javac -encoding UTF8 -sourcepath ./src/ -d ./out/ .\src\twostackpda\MainMenu.java
+   ```
+6. Create a JAR File: Create a JAR file using the command
+   ```
+   jar cvf 2-Stack-PDA.jar -C .\out\ .
+   ```
+7. Run the Application: Execute the application by running the following command
+   ```
+   java -cp .\2-Stack-PDA.jar twostackpda/MainMenu
+   ```
 
 ## Usage
 The 2PDA package can be used to define and simulate 2-Stack-PDAs for specific languages. It provides classes and methods to configure the machine, load/save configurations from/to files, and run simulations on input strings.
