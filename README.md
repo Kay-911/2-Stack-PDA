@@ -37,12 +37,14 @@ The "2PDA" and "Translator" projects are designed to work seamlessly together. A
 
 ### Installation
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Ysmnydgd/2-Stack-PDA.git
-
-2. 
+1. Install a Java SDK which is Java 11 compatible (later versions should also be fine).
+2. Make sure that the commands java and javac call the respective Java 11 binaries.
+3. Install Git.
+4. Checkout 2-Stack-PDA from git repository ```https://github.com/Ysmnydgd/2-Stack-PDA.git```
+5. After that change into the dirctory 2-Stack-PDA.
+6. To compile the source file execute the command ```javac -sourcepath ./src/ -d ./out/ .\src\twostackpda\MainMenu.java```
+7. To create a jar file execute the command ```jar cvf 2-Stack-PDA.jar -C .\out\ .```
+8. To execute the application run ```java -cp .\2-stack-pda.jar twostackpda/MainMenu```
 
 ## Usage
 The 2PDA package can be used to define and simulate 2-Stack-PDAs for specific languages. It provides classes and methods to configure the machine, load/save configurations from/to files, and run simulations on input strings.
