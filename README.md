@@ -41,7 +41,7 @@ The "2PDA" and "Translator" projects are designed to work seamlessly together. A
 2. Make sure that the commands java and javac call the respective Java 11 binaries.
 3. Install Git.
 4. Checkout 2-Stack-PDA from git repository ```https://github.com/Ysmnydgd/2-Stack-PDA.git```
-5. After that change into the dirctory 2-Stack-PDA.
+5. After that change into the directory 2-Stack-PDA ```cd 2-Stack-PDA/```
 6. To compile the source file execute the command ```javac -sourcepath ./src/ -d ./out/ .\src\twostackpda\MainMenu.java```
 7. To create a jar file execute the command ```jar cvf 2-Stack-PDA.jar -C .\out\ .```
 8. To execute the application run ```java -cp .\2-stack-pda.jar twostackpda/MainMenu```
