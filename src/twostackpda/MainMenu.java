@@ -1,6 +1,10 @@
 package twostackpda;
 
 import java.io.File;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,7 +18,7 @@ public class MainMenu {
   private static final String VERSION = "VERSION 1.0";
   private static final String NAME = "© 2023";
 
-  private static final Scanner scanner = new Scanner(System.in);
+  private final static Scanner scanner = new Scanner(new InputStreamReader(System.in, StandardCharsets.UTF_8));
 
   /**
    * The main entry point of the application. Displays the main menu and allows users to interact
@@ -23,6 +27,7 @@ public class MainMenu {
    * @param args The command-line arguments (not used in this application).
    */
   public static void main(String[] args) {
+    System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
 
     /* String currentWorkingDirectory = System.getProperty("user.dir");
     System.out.println("Current Working Directory: " + currentWorkingDirectory);*/
