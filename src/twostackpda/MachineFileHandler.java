@@ -1,8 +1,11 @@
 package twostackpda;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -99,7 +102,7 @@ public class MachineFileHandler {
 
     fileName = addFileExtension(fileName);
 
-    try (PrintWriter writer = new PrintWriter(fileName)) {
+    try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream(fileName), StandardCharsets.UTF_8))) {
       writer.println("inputAlphabet=" + String.join(",", inputAlphabet));
       writer.println("states="
           + String.join(",", states.stream().map(Object::toString).toArray(String[]::new)));

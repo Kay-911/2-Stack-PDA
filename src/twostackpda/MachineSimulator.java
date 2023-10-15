@@ -13,7 +13,8 @@ public class MachineSimulator {
 
   private final Stack<String> stack1;
   private final Stack<String> stack2;
-  private static final String EMPTY_SYMBOL = "ε";
+  //private static final String EMPTY_SYMBOL = "ε";
+  private static final String EMPTY_SYMBOL = "\u03B5";
   private static final String STACK1_INITIAL_SYMBOL = "#";
   // To be uncommented, if word should start with $
   /*
