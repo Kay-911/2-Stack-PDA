@@ -43,6 +43,9 @@ The "2PDA" and "Translator" projects are designed to work seamlessly together. A
 To run the application on Windows terminals, you can implement a workaround by modifying the constant in the  ```MachineSimulator``` class. Locate the line ```private static final String EMPTY_SYMBOL = "\u03B5";``` and replace it with a compatible character, such as ```E``` or ```€```.
 <br> 
 <br> 
+
+To install and run the 2-Stack-PDA, follow these steps:
+
 1. Install a Java SDK: Ensure you have a Java 11-compatible SDK installed. Newer versions should be compatible as well. Confirm that the ```java``` and ```javac``` commands reference the Java 11 binaries.
 
 2. Install Git: If Git is not already installed on your system, you can download and install it from [https://git-scm.com/](https://git-scm.com/).
