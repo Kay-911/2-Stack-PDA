@@ -20,7 +20,7 @@ This package includes a set of classes to simulate 2-Stack-PDA behavior, allowin
 
 ### Using 2-Stack-PDA and Translator Together
 
-The "2PDA" and "Translator" projects are designed to work seamlessly together. After translating a Turing machine using the [Translator Project](https://github.com/Ysmnydgd/Translator), you can load the output .txt file into this 2-Stack-PDA Simulator.
+The "2-Stack-PDA" and "Translator" projects are designed to work seamlessly together. After translating a Turing machine using the [Translator Project](https://github.com/Ysmnydgd/Translator), you can load the output .txt file into this 2-Stack-PDA Simulator.
 
 ## Features
 
@@ -118,11 +118,11 @@ To configure the 2-Stack-PDA, follow these steps in the main menu:
 
 3. After entering all the transitions, type `end` to complete the transition configuration.
 
-You can also save all entered configurations if you wish to a .txt file. Now the 2-Stack-PDA is ready for simulation.
+You can also save all entered configurations, if you wish, to a .txt file. Now the 2-Stack-PDA is ready for simulation.
 
 You can enter input strings for simulation, view the current configuration by typing `show`, or return to the main menu using `menu`.
 
-**Note**: The Simulator also functions as 1-Stack-PDAs by always passing **ε** as pop_stack2 and push_stack2 character.
+**Note**: The Simulator also functions as 1-Stack-PDA by always passing **ε** as pop_stack2 and push_stack2 character.
 
 ### Loading a 2-Stack-PDA
 
@@ -130,7 +130,7 @@ If you have saved configurations, you can load them by following these steps:
 
 1. In the main menu, type `load`. This will display a menu with all the machines in the directory. By default, the directory is set to `user.dir`.
 
-2. You can select the machine you want to load by typing its index (seen on the right).
+2. You can select the machine you want to load by typing its index (seen on the left).
    
 3. Once the machine is loaded, you can now run it by entering different input strings and observe how the 2-Stack-PDA processes them.
    
