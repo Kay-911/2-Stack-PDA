@@ -13,8 +13,8 @@ public class MachineSimulator {
 
   private final Stack<String> stack1;
   private final Stack<String> stack2;
-  //private static final String EMPTY_SYMBOL = "ε";
-  private static final String EMPTY_SYMBOL = "\u03B5";
+  //private static final String EMPTY_SYMBOL = "\u03B5"; //UTF-8 for ε
+  private static final String EMPTY_SYMBOL = "E"; //represents "ε"
   private static final String STACK1_INITIAL_SYMBOL = "#";
   // To be uncommented, if word should start with $
   /*
@@ -106,7 +106,7 @@ public class MachineSimulator {
     int i = 0;
     while (true) {
       // The input string is processed via the variable symbol and as soon as the input string is
-      // finished, symbol will be set to ε (only stack operations are being performed).
+      // finished, symbol will be set to epsilon (only stack operations are being performed).
       String symbol;
       if (i < inputString.length()) {
         symbol = String.valueOf(inputString.charAt(i));
@@ -178,7 +178,7 @@ public class MachineSimulator {
         if (!stack.empty() && stack.peek().equals(popSymbolsArray[j])) {
           stack.pop();
         } else {
-          System.out.println("Word failed - transition[" + popSymbols + "]=ε");
+          System.out.println("Word failed - transition[" + popSymbols + "]=E");
           return;
         }
       }
@@ -213,7 +213,7 @@ public class MachineSimulator {
       // Check if the actualState and input symbol of the transition match the given currentState
       // and symbol.
       // Also, check if the top symbols of stack1 and stack2 match the pop symbols defined in the
-      // transition, or if the pop symbols in the transition are empty (represented by "ε").
+      // transition, or if the pop symbols in the transition are empty (represented by "E").
       if (actualState == currentState && transition[1].equals(symbol)) {
         if ((transition[2].equals(EMPTY_SYMBOL) || stack1.empty() || transition[2].equals(stack1
             .peek()))
