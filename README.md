@@ -37,12 +37,6 @@ The "2-Stack-PDA" and "Translator" projects are designed to work seamlessly toge
 - Git
 
 ### Installation
-> [!IMPORTANT]  
-> This application can only be run on Mac OS, Linux, or Windows Subsystem for Linux (WSL) due to encoding issues with the symbol **ε** in other shells.
-
-To run the application on Windows terminals, you can implement a workaround by modifying the constant in the  ```MachineSimulator``` class. Locate the line ```private static final String EMPTY_SYMBOL = "\u03B5";``` and replace it with a compatible character, such as ```E``` or ```€```.
-<br> 
-<br> 
 
 To install and run the 2-Stack-PDA, follow these steps:
 
@@ -78,7 +72,7 @@ To install and run the 2-Stack-PDA, follow these steps:
 ## Usage
 The 2PDA package can define and simulate 2-Stack-PDAs for specific languages. It provides classes and methods to configure the machine, load/save configurations from/to files, and run simulations on input strings.
 
-The initial stack symbol for both stacks is "#". 
+The initial stack symbol for both stacks is "#".
 
 ### Configuring the 2-Stack-PDA
 
@@ -88,7 +82,7 @@ To configure the 2-Stack-PDA, follow these steps in the main menu:
    
    You will be prompted to enter the following parameters:
 
-   - **Input Alphabet**: Define all symbols used in the input string. # and ε are NOT allowed.
+   - **Input Alphabet**: Define all symbols used in the input string. # and E (represents ε) are NOT allowed.
 
    - **Set of States**: Specify all the states that the 2-Stack-PDA will have.
 
@@ -114,7 +108,7 @@ To configure the 2-Stack-PDA, follow these steps in the main menu:
 
    - **next_state**: The state to which the 2-Stack-PDA will transition after this operation.
   
-   ε as pop/push_stack1/2 character represents doing nothing, neither popping nor pushing, and ε as the input_symbol means that nothing will be read.
+   E as pop/push_stack1/2 character represents doing nothing, neither popping nor pushing, and E as the input_symbol means that nothing will be read.
 
 3. After entering all the transitions, type `end` to complete the transition configuration.
 
@@ -122,7 +116,7 @@ You can also save all entered configurations, if you wish, to a .txt file. Now t
 
 You can enter input strings for simulation, view the current configuration by typing `show`, or return to the main menu using `menu`.
 
-**Note**: The Simulator also functions as 1-Stack-PDA by always passing **ε** as pop_stack2 and push_stack2 character.
+**Note**: The Simulator also functions as 1-Stack-PDA by always passing **E** as pop_stack2 and push_stack2 character.
 
 ### Loading a 2-Stack-PDA
 
